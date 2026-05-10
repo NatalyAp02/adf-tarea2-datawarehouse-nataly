@@ -1,0 +1,29 @@
+{
+	"name": "gold_dim_cliente",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "dwventas",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "gold"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "cliente_key",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "nombre_cliente",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "gold",
+			"table": "dim_cliente"
+		}
+	}
+}
